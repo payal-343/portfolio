@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.btn:focus,
+.resizeselect:focus{
+	box-shadow: none !important;
+	border: none !important;
+	outline: 0 !important;
+}
+.form-control:focus {
+    border-color: #dee2e6 !important;
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
+.gap {
+    padding: 1.5rem 0;
+}
+
+/* header-start */
+header {
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    background: #fff;
+}
+.header.sticky {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+}
+.header {
+    padding: 0.625rem;
+    box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.1);
+}
+.navbar .navbar-brand {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #242f67;
+}
+.navbar .navbar-brand span {
+    color: #f0720b;
+}
+.navbar .navbar-nav {
+    gap: 2rem;
+}
+.header .nav-link {
+    color: #242f67;
+    font-size: 1rem;
+    font-weight: 600;
+    padding-left: 0 !important;
+    padding-bottom: 0.625rem;
+    padding-right: 0 !important;
+}
+.header .nav-link.active {
+    color: #f0720b !important;
+    font-size: 1rem;
+}
+.navbar-nav .nav-item {
+    position: relative;
+}
+.navbar-nav .nav-item:not(:first-child) .nav-link:after {
+    position: absolute;
+    content: '';
+    height: 0.0625rem;
+    background: #f0720b;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s ease;
+    width: 0;
+}
+.navbar-nav .nav-item:hover .nav-link::after {
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+
+.header .nav-link:hover {
+    color: #f0720b;
+}
+/* header-end */
+
+/* custom-btn */
+.custom-btn {
+    border-radius: 0.5rem;
+    background-color: #f0720b;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.625rem;
+    transition: all 0.5s;
+    margin-top: 1rem;
+}
+.custom-btn span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.custom-btn span::after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -1.25rem;
+    transition: 0.5s;
+}
+ .custom-btn:hover span {
+    padding-right: 1.563rem;
+  }
+  
+  .custom-btn:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  /* custom-btn */
+
+  /* banner */
+  .banner_content h3 {
+    font-size: 2.125rem;
+    line-height: 1;
+    font-weight: 700;
+    color: #242f67;
+}
+.banner_content h1 {
+    color: #242f67;
+    font-weight: 700;
+}
+.banner_content h1 span, .about h2 span {
+    color: #f0720b;
+    font-weight: 700;
+}
+.banner_content .title h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #242f67;
+}
+.title h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #242f67;
+}
+.title {
+    margin-bottom: 3rem;
+}
+.sub-title {
+    font-size: 1.75rem;
+    font-weight: 500;
+    color: #242f67;
+    margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+    .margin-bottom {
+    margin-bottom: 2rem;
+    }
+}
+
+/* about */
+
+
+/* skills */
+.skill-item {
+    width: 14rem;
+    height: 14rem;
+    margin: auto;
+    padding: 1rem;
+    cursor: pointer;
+    background: #fff;
+    border-radius: 0.5rem;
+    box-shadow: #00000017 0.063rem 0.313rem 0.875rem;;
+    -webkit-transition: all 0.4s ease 0s;
+    -moz-transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+    transition: all 0.4s ease 0s;
+}
+.skill-item img {
+    width: 100%;
+}
+.skill-item:hover {
+    box-shadow: 0px 15px 15px 20px rgb(235 100 22 / 11%);
+}
+.nav-tabs {
+    flex-wrap: nowrap !important;
+    border-bottom: 0 !important;
+    margin-bottom: 1rem !important;
+}
+.nav-tabs .nav-item {
+    width: 100%;
+}
+.nav-tabs .nav-item .nav-link {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    background: #fff;
+    color: #f0720b;
+}
+.nav-tabs .nav-item .nav-link.active {
+    width: 100%;
+    background: #f0720b;
+    color: #fff;
+    border-radius: 0;
+    border: none;
+}
+.tab-content {
+    padding: 0.625rem;
+}
+.tab-pane p span {
+    color: #f0720b;
+}
+
+
+/* media-query */
+@media (max-width: 991px) { 
+    .skill-item {
+    margin-bottom: 2rem;
+    }
+    .banner_content {
+        text-align: center;
+        padding: 2rem 0;
+    }
+    .banner_content h3, .banner_content h1, .banner_content h5 {
+        margin-bottom: 1.25rem;
+    }
+ }
+
+/* contact */
+.contact-info {
+    padding: 1.563rem 1.875rem;
+    background: #faf8ff;
+    text-align: center;
+    position: relative;
+    margin-top: 1.563rem;
+}
+.contact-info:before {
+    content: '';
+    position: absolute;
+    top: -1.563rem;
+    left: -3.125rem;
+    background: url('../images/contact-info-bg.png') no-repeat;
+    height: 10.938rem;
+    width: 10.938rem;
+}
+.contact-info .lage {
+    color: #f0720b;
+    font-size: 6.25rem;
+    font-weight: 700;
+    line-height: 85px;
+    position: relative;
+    z-index: 9;
+}
+.contact-info .lage span {
+    color: #242f67;
+}
+.contact-info .smll {
+    text-align: left;
+    color: #000000;
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-left: 1.25rem;
+}
+.call-now {
+    padding-top: 3.125rem;
+    text-align: left;
+    margin-bottom: 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.call-now span {
+    font-size: 3.75rem;
+    font-weight: 700;
+    color: #242f67;
+}
+.call-now p {
+    color: #f0720b;
+    font-weight: 500;
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+}
+.call-now a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #000000;
+    transition: all 0.3s ease;
+    line-height: 1;
+}
+.call-now a:hover {
+    text-decoration: underline;
+}
+
+/* media-query */
+@media (max-width: 991px) { 
+    .contact-info:before {
+        background: none;
+    }
+    .contact-info .d-flex {
+        gap: 2rem;
+        align-items: center;
+    }
+}
+
+/* footer */
+.footer {
+    background: #f0720b;
+    padding: 1rem;
+}
+.footer-text {
+    color: #fff;
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    text-align: center;
+}
