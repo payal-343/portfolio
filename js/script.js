@@ -41,3 +41,37 @@ const roles = ["Frontend Developer", "UI Developer"];
 
     loopRoles();
 // subtitle-content
+
+// skills-testimonial
+$(document).ready(function(){
+      $('.carousel').slick({
+      slidesToShow: 2,
+      autoplay: false,
+      arrow: false,
+      dots: false,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 991,
+          settings: {
+            slidesToShow: 1,
+            autoplay: true,
+          },
+        }
+      ]
+      });
+    });
+
+//large content
+const spans = document.querySelectorAll(".read-more");
+
+spans.forEach((span) => {
+  span.addEventListener("click", ()=>{
+    const more_text = span.closest(".slick_Gap").querySelector(".more-text");
+    more_text.classList.toggle("active");
+    span.textContent = more_text.classList.contains("active")
+        ? "Read Less"
+        : "Read More";
+  });
+
+});

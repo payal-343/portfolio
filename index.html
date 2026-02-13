@@ -4,15 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="plugins/bootstrap.min.css" />
-    <script src="plugins/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="plugins/slick-theme.min.css" />
+    <link rel="stylesheet" href="plugins/slick.min.css">
+
 </head>
 <body>
+    
     <!-- header-area -->
     <header class="header" id="header">
-        <nav class="navbar navbar-expand-lg p-0">
+        <div class="topbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 sm-pb-2">
+                        <a href="tel: 9312942343"><i class="fa fa-phone" aria-hidden="true"></i>+91 9312942343</a>
+                    </div>
+                    <div class="col-lg-6 col-md-6">
+                        <a href="mailto: mspaayal05@gmail.com" class=""><i class="fa fa-envelope-o" aria-hidden="true"></i>mspaayal05@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <a class="navbar-brand" href="#"><span>P</span>AYAL.</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +45,13 @@
                     <a class="nav-link" href="#about">About</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#skills">Skills</a>
+                    <a class="nav-link" href="#about">Skills</a>
                     </li>
                     <li class="nav-item">
-                    <a class="nav-link" href="#">Projects</a>
+                    <a class="nav-link" href="#services">Services</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
                     <a class="nav-link" href="#contact">Contact</a>
@@ -87,56 +106,162 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="experience-tab">
-                        <p>
-                            <span>UI Developer</span>
-                            with hands-on experience of 2.7yrs in designing and developing responsive, user-focused web applications and websites. 
-                            <br>
-                            Skilled in HTML5, CSS3, Bootstrap 5, JavaScript, and converting Figma designs into pixel-perfect, cross-browser compatible interfaces. 
-                            <br>
-                            Led UI development and successful launches of multiple live projects, including medical equipment websites, business platforms, and web applications. 
-                            <br>
-                            Experienced in custom-coded solutions, mobile-first design, and collaboration with cross-functional teams to deliver high-quality, performance-optimized digital products.
-                        </p>
+                        <div class="tab-pane fade show active" id="experience" role="tabpanel" aria-labelledby="experience-tab">
+                            <p>
+                                <span>UI Developer</span>
+                                with hands-on experience of 2.7yrs in designing and developing responsive, user-focused web applications and websites. 
+                                <br>
+                                Skilled in HTML5, CSS3, Bootstrap 5, JavaScript, and converting Figma designs into pixel-perfect, cross-browser compatible interfaces. 
+                                <br>
+                                Led UI development and successful launches of multiple live projects, including medical equipment websites, business platforms, and web applications. 
+                                <br>
+                                Experienced in custom-coded solutions, mobile-first design, and collaboration with cross-functional teams to deliver high-quality, performance-optimized digital products.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
+                            <h3>Certification in Web Designing</h3>
+                            <p><span>DUCAT IT Training Institute</span>
+                                <br>
+                                Web Designing professional with formal training and hands-on experience in HTML, CSS, Bootstrap, and JavaScript. Skilled in creating responsive, user-friendly, and visually appealing websites while following modern UI/UX principles and front-end development best practices.
+                            </p>
+                        </div>
                     </div>
-                    <div class="tab-pane fade" id="certificate" role="tabpanel" aria-labelledby="certificate-tab">
-                        <h3>Certification in Web Designing</h3>
-                        <p><span>DUCAT IT Training Institute</span>
-                            <br>
-                            Web Designing professional with formal training and hands-on experience in HTML, CSS, Bootstrap, and JavaScript. Skilled in creating responsive, user-friendly, and visually appealing websites while following modern UI/UX principles and front-end development best practices.
-                        </p>
+                    <div class="tools-use skills-use">
+                        <p><strong>Skills we use:</strong></p>
+                        <ul>
+                            <li>
+                                <img src="images/html.png" alt="html">
+                            </li>
+                            <li>
+                                <img src="images/css3.png" alt="css3">
+                            </li>
+                            <li>
+                                <img src="images/js.png" alt="js">
+                            </li>
+                            <li>
+                                <img src="images/bootstrap.png" alt="bootstrap">
+                            </li>
+                        </ul>
                     </div>
+                    <div class="tools-use">
+                        <p><strong>Tools we use:</strong></p>
+                        <ul>
+                            <li>
+                                <img src="images/vscode.png" alt="vscode">
+                            </li>
+                            <li>
+                                <img src="images/figma.png" alt="figma">
+                            </li>
+                            <li>
+                                <img src="images/git.png" alt="git">
+                            </li>
+                            <li>
+                                <img src="images/canva.png" alt="canva">
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="skills gap" id="skills">
+    <section class="services gap" id="services">
         <div class="container">
             <div class="title">
-                <h2 class="text-center">My Skills</h2>
+                <h2 class="text-center"><span>Services</span> Offer</h2>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="skill-item">
-                        <img src="images/html.png" alt="html-icon">
+                <div class="col-xl-4 col-md-6 col-12 service-block">
+                    <div class="content-block text-center">
+                    <div class="softIcon"><i class="fa fa-code" aria-hidden="true"></i></div>
+                    <h2 class="service-head">Figma to Code Conversion</h2>
+                    <p class="title-text mb-0">Convert Figma designs into pixel-perfect, responsive, and clean frontend code. Ensure accurate spacing, typography, and layout consistency across all devices.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="skill-item">
-                        <img src="images/css3.png" alt="css-icon">
+                <div class="col-xl-4 col-md-6 col-12 service-block">
+                    <div class="content-block text-center">
+                    <div class="softIcon"><i class="fa fa-globe" aria-hidden="true"></i></div>
+                    <h2 class="service-head">Cross-Browser & Mobile Optimization</h2>
+                    <p class="title-text mb-0">Optimize websites for smooth performance across different browsers and devices. Ensure consistent layout, responsiveness, and compatibility for better user experience.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="skill-item">
-                        <img src="images/js.png" alt="javascript-icon">
+                <div class="col-xl-4 col-md-6 col-12 service-block">
+                    <div class="content-block text-center">
+                    <div class="softIcon"><i class="fa fa-columns" aria-hidden="true"></i></div>
+                    <h2 class="service-head">Responsive Layout</h2>
+                    <p class="title-text mb-0">Build flexible and adaptive layouts that seamlessly adjust to desktop, tablet, and mobile screens. Focus on clean structure and mobile-first design principles.</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="skill-item">
-                        <img src="images/bootstrap.png" alt="bootsrap-icon">
+            </div>
+        </div>
+    </section>
+
+    <section class="projects gap" id="projects">
+        <div class="container">
+            <div class="title">
+                <h2 class="text-center">My <span>Projects</span></h2>
+            </div>
+            <div class="wrapper">
+                <div class="carousel">
+                    <div class="slick_Gap">
+                        <div class="slick-block">
+                            <h2 class="slick-title">FOODPE – Restaurant Management Dashboard UI </h2>
+                            <p class="title-text more-text mb-0">
+                            Your choice of a restaurant management software should help you free up your time to focus on delivering efficiency and serving great food!<br>
+                            Restaurant sales & order management admin panel with analytics and responsive UI.<br>
+                            <strong>Tech:</strong> HTML, CSS, JS, Bootstrap
+                            </p><span class="read-more">Read more</span>
+                            <div class="content-flex">
+                                <a href="https://github.com/payal-343/foodpe" class="custom-btn"><span>Live Demo</span></a>
+                            </div>
+                        </div>
                     </div>
+
+                    <div class="slick_Gap">
+                        <div class="slick-block">
+                            <h2 class="slick-title">Alysei | B2B Food Marketplace – Admin Dashboard UI</h2>
+                            <p class="title-text more-text mb-0">
+                            Designed and developed the Admin Dashboard UI for Alysei, a B2B Italian food marketplace platform. <br>
+                            The dashboard includes analytics panels, order management, product management, and responsive UI components for seamless admin control.<br>
+                            <strong>Tech:</strong> HTML, CSS, JS, Bootstrap
+                            </p><span class="read-more">Read more</span>
+                            <div class="content-flex">
+                                <a href="https://alysei.com/en" class="custom-btn" target="_blank"><span>Live Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slick_Gap">
+                        <div class="slick-block">
+                            <h2 class="slick-title">Acer Biomedicals – ERP System (In Development) </h2>
+                            <p class="title-text more-text mb-0">
+                            Developing an ERP system for Acer Biomedicals to manage inventory, production, sales, and <br>
+                            business operations efficiently through a centralized and scalable dashboard interface.<br>
+                            <strong>Tech:</strong> HTML, CSS, JS, Bootstrap
+                            </p><span class="read-more">Read more</span>
+                            <br>
+                            <div class="content-flex">
+                                <a href="#" class="custom-btn" target="_blank"><span>Coming Soon</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slick_Gap">
+                        <div class="slick-block">
+                            <h2 class="slick-title">Hospital Management System – Admin Dashboard UI</h2>
+                            <p class="title-text more-text mb-0">
+                            Developed a responsive Admin UI for a Korean-based Hospital Management System to manage patients, doctors, appointments, billing, and analytics efficiently.<br>
+                            Created reusable UI elements (cards, tables, forms, modals)
+                            <strong>Project Type:</strong> Freelance <br>
+                            <strong>Tech:</strong> HTML, CSS, JS, Bootstrap
+                            </p><span class="read-more">Read more</span>
+                            <div class="content-flex">
+                                <a href="https://github.com/payal-343/freelance_project" class="custom-btn" target="_blank"><span>Live Demo</span></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    
                 </div>
             </div>
         </div>
@@ -145,7 +270,7 @@
     <section class="contact gap" id="contact">
         <div class="container">
             <div class="title">
-                <h2 class="">Contact Me</h2>
+                <h2 class=""><span>Contact</span> Me</h2>
             </div>
             <div class="row">
                 <div class="col-lg-6">
@@ -200,7 +325,10 @@
 
 
 
-    
-    <script src="js/script.js"></script>
+<!-- script-files -->
+<script src="plugins/jquery.min.js"></script>
+<script src="plugins/bootstrap.bundle.min.js"></script>
+<script src="plugins/slick.min.js"></script>
+<script src="js/script.js"></script>
 </body>
 </html>
